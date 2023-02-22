@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Following from './Pages/Follow';
+import Answer from './Pages/AnswerPage';
+import Notification from './Pages/Notification';
+import SidebarOptionDetail from './Pages/SidebarOptionsPage';
+import UserGroupPage from './Pages/UserGroupPage';
+import Error from "./components/Error";
 import './App.css';
+import QuoraHeader from './components/QuoraHeader';
+import './css/Quora.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <QuoraHeader />
+        <Routes>
+         <Route path='/' element={<Home />}></Route>
+         <Route path='/answer' element={<Answer/>}></Route>
+         <Route path='/follow' element={<Following/>}></Route>
+         <Route path='/notification' element={<Notification/>}></Route>
+         <Route path='/interests' element={<SidebarOptionDetail/>}></Route>
+         <Route path='/spaces' element={<UserGroupPage/>}></Route>
+          <Route path="*" element={<Error />}></Route>
+        </Routes>
     </div>
   );
 }

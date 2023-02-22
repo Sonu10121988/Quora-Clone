@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.qHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+    /* z-index: 1000; */
+    top: 0px;
+    box-shadow: 2px 3px 6px rgba(187, 187, 187, 0.5);
+}
+
+.qHeader_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qHeader_logo > img {
+    height: 85px !important;
+    object-fit: contain;
+}
+.qHeader_logo > img:hover{
+  opacity: 0.6;
+}
+
+.qHeader_icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qHeader_icon {
+    font-size: xx-large;
+    padding: 5px 20px;   
+}
+.red{
+  color: #b92b27;
+    border-bottom: 3px solid #b92b27;
+}
+.blue {
+  color: rgba(70, 65, 65, 0.897);
+
+}
+
+.qHeader_icon:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+ .qHeader_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.qHeader_input > input {
+     width: 250px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-left: 3px;
+    font-size: 13px;
+    color: rgb(49, 49, 49);
+}
+
+.qHeader_Rem {
+    /* border: 1px solid red; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: xx-large;
+    color: gray;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.qHeader_Rem :hover {
+    color: #000;
+}
+.quora_person{
+    width: 37px;
+    height: 37px;
+    background-size: contain;
+    border-radius: 50%;
+}
+.btn_try{
+    padding: 8px;
+    margin-left: 0px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+}
+.btn_try:hover{
+    color: white;
+}
+.btn_question{
+    border: none;
+    outline: none;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+}
+.modal_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal_title > h5 {
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .modal_title > h5:hover {
+    color: #b92b27;
+  }
+  
+  .modal_info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .modal_info > p {
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+  }
+  
+  .modal_info > .modal_scope {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 10px;
+    margin-left: 10px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal_field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+  }
+  
+  .modal_field > .modal_fieldLink {
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal_field >input  {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+  }
+  
+  .modal_buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal_buttons > .cancle {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal_buttons > .cancle:hover {
+    color: white;
+  }
+  
+  .modal_buttons > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .modal_buttons > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+
+button:hover {
+    background-color: #222; 
+     color: white;
+      cursor: pointer;
+}  
+.question_img{
+  height: 40vh;
+  object-fit: contain;
+  margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .btn_question{
+        border: none;
+        outline: none;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 33px;
+        /* width: 150px; */
+        font-size: 20px;
+        /* height: 60px; */
+    }
+    .qHeader_icons {
+        display: none;
+    }
+
+    .qHeader_input {
+        display: none;
+    }
+    .qHeader_Rem {
+        display: none;
+    }
+}

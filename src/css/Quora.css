@@ -1,0 +1,29 @@
+.Quora{
+    width: 100%;
+    min-width: fit-content;
+}
+.quora_contents{
+    width: 100%;
+    min-width: fit-content;
+    display: flex; 
+     justify-content: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.quora_content{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 80px;
+}
+
+/* This modal popup hearder(add Question) responsive globally for all scrien size */
+.react-responsive-modal-modal{
+    width: 90vw;
+    height: 90vh;
+}
+.quill{
+    height: 50vh;
+}
+.react-responsive-modal-overlay{
+    background: rgb(0 0 0 / 75%);
+}

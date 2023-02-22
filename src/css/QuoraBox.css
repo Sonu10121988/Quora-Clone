@@ -1,0 +1,43 @@
+.quora_box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 700px;
+}
+.quora_box:hover {
+  border: 1px solid rgb(175, 175, 175);
+}
+.quora_info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.quora_info > input {
+  width: 550px;
+  border-radius: 50px;
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(247, 244, 244);
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+.quora_info > input:hover {
+  background-color: rgb(241, 240, 240);
+}
+.quora_reply {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* padding: 5px; */
+  margin-top: 8px;
+  font-size: 18px;
+  color: rgb(79, 78, 78);
+  cursor: pointer;
+}
+.quora_replys:hover {
+  color: black;
+  text-decoration: underline;
+}

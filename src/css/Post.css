@@ -1,0 +1,159 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    max-width: 700px;
+    box-shadow: 0px 5px 8px -9px solid rgab(0, 0, 0, 0.5);
+  }
+  
+  .post_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .post_info a{
+      margin-left: 10px;
+  }
+  
+  .post_info > h4 {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .post_info > h4:hover {
+    text-decoration: underline;
+  }
+  
+  .post_body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+   .post_question {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post_question p{
+  margin: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .post_answer {
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .post_answer > button:hover{
+    background-color: #eee;
+    color: #222;
+    text-decoration:none;
+  }
+  
+  .post_question > p:hover {
+    text-decoration: underline;
+  }
+  
+  .post_body > img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .post_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-top: 5px;
+  }
+  
+  .post_footer{
+    color: gray;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  .post_actions {
+    width: 15%;
+    background-color: lightgray;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 33px;
+  }
+  .fa-regular{
+   font-size: 21px;
+    border-radius: 33px;
+    margin-left: 2rem;
+  }
+  .fa-regular:hover {
+    color: rgb(0, 140, 255);
+  }
+  
+  .post_actions:hover {
+    color: rgb(0, 140, 255);
+  }
+  
+  .action_more {
+    margin-left:  auto;
+  }
+  
+  .action_more button  {
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 23px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+ 
+  .action_more button:hover {
+    background-color: #dad9d9;
+    color: rgb(0, 140, 255);
+  }
+
+  .modal_answer {
+    display: flex;
+    padding-top: 20px;
+    flex: 1;
+  }
+  .modal_question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal_question > p {
+    color: gray;
+    font-size: 18px;
+  }
+  
+  .modal_question > p > .name_time {
+    color: black;
+    font-weight: bold;
+  }
+ 
+
+  /* It's for answer modal popup all scrien size */
+  .react-responsive-modal-modal {
+    /* width: 600px; */
+    height: 400px;
+  }
+  
+  .quill {
+    margin-bottom: 40px;
+    width: 100%;
+    height: 120px;
+  }

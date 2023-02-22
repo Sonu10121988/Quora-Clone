@@ -1,0 +1,25 @@
+.error_main{
+    width: 40%;
+    height: 40vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    border-radius: 10px;
+    background-color: lightpink;
+}
+
+.error_button{
+    width: 120px;
+    margin-top: 3rem;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.error_button:hover{
+    background-color: rgb(230, 180, 180);
+    color: black;
+}
