@@ -13,9 +13,9 @@ function Post() {
     return (
         <div className='post'>
             <div className='post_info'>
-                <div className='info_img'><img src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=50&q=80" ' /></div>
+                <div className='info_img'><img src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=50&q=80' alt='avatar' /></div>
                 <h4>Sonu Yadav</h4>
-                <a href='#'>Follow</a>
+                <a href='#' >Follow</a>
             </div>
             <div className='post_body'>
                 <div className='post_question'>

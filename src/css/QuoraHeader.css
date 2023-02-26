@@ -73,14 +73,12 @@
 }
 
 .qHeader_Rem {
-    /* border: 1px solid red; */
-    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: xx-large;
     color: gray;
-    margin: 5px;
+    margin: 8px;
     cursor: pointer;
 }
 
@@ -93,13 +91,19 @@
     background-size: contain;
     border-radius: 50%;
 }
+.dropdown-toggle{
+  width: 52px;
+  height: 52px;
+  background-size: contain;
+  border-radius: 50%;
+}
 .btn_try{
     padding: 8px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     border: none;
     outline: none;
     font-weight: 700;
-    padding: 10px;
+    font-size: 15px;
     border-radius: 33px;
 }
 .btn_try:hover{
@@ -110,6 +114,7 @@
     outline: none;
     font-weight: 700;
     padding: 10px;
+    margin-left: 5px;
     border-radius: 33px;
 }
 .modal_title {
@@ -143,8 +148,9 @@
     color: gray;
   }
   
-  .modal_info > .modal_scope {
+  .modal_info .modal_scope {
     display: flex;
+    height: 40px;
     gap: 10px;
     align-items: center;
     color: rgb(98, 98, 98);

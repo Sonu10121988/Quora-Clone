@@ -12,66 +12,66 @@ function QuoraHeader() {
   return (
     <div className="qHeader">
       <div className="qHeader_content">
-      <NavLink to="/">
-        <div className="qHeader_logo">
-          <img
-            src="https://learndigitaladvertising.com/wp-content/uploads/2019/05/Quora-Logo-1.jpg"
-            alt="quoralogo"
-          />
-        </div>
+        <NavLink to="/">
+          <div className="qHeader_logo">
+            <img
+              src="https://learndigitaladvertising.com/wp-content/uploads/2019/05/Quora-Logo-1.jpg"
+              alt="quoralogo"
+            />
+          </div>
         </NavLink>
         <div className="qHeader_icons">
-          <div className="qHeader_icon" >
-          <NavLink
+          <div className="qHeader_icon">
+            <NavLink
               to="/"
               className={({ isActive, isPending }) =>
                 isActive ? "red" : "blue"
               }
             >
-            <i class="fa-solid fa-house"></i>
+              <i class="fa-solid fa-house"></i>
             </NavLink>
           </div>
           <div className="qHeader_icon">
-          <NavLink
+            <NavLink
               to="/follow"
               className={({ isActive, isPending }) =>
                 isActive ? "red" : "blue"
               }
             >
-            <i class="fa-solid fa-list"></i>
+              <i class="fa-solid fa-list"></i>
             </NavLink>
           </div>
           <div className="qHeader_icon">
-          <NavLink
+            <NavLink
               to="/answer"
               className={({ isActive, isPending }) =>
                 isActive ? "red" : "blue"
               }
             >
-            <i
-              class="fa-regular fa-pen-to-square"
-              style={{ fontSize: "xx-large", marginLeft: "0px" }}
-            ></i>
+              <i
+                class="fa-regular fa-pen-to-square"
+                style={{ fontSize: "xx-large", marginLeft: "0px" }}
+              ></i>
             </NavLink>
           </div>
           <div className="qHeader_icon">
-          <NavLink
+            <NavLink
               to="/spaces"
               className={({ isActive, isPending }) =>
                 isActive ? "red" : "blue"
               }
             >
-            <i class="fa-solid fa-user-group"></i>
+              <i class="fa-solid fa-user-group"></i>
             </NavLink>
           </div>
           <div className="qHeader_icon">
-          <NavLink
+            <NavLink
               to="/notification"
               className={({ isActive, isPending }) =>
                 isActive ? "red" : "blue"
               }
             >
-            <i class="fa-solid fa-bell"></i>
+              <i class="fa-solid fa-bell"></i>
             </NavLink>
           </div>
         </div>
@@ -81,11 +81,52 @@ function QuoraHeader() {
         </div>
         <div className="qHeader_Rem">
           <button className="btn_try">Try Quora +</button>
-          <img
-            className="quora_person"
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-           alt="avatar"/>
-          <i class="fa-solid fa-globe" style={{ marginLeft: "10px" }}></i>
+        </div>
+        <div className="qHeader_Rem_detail">
+          <div class="dropdown">
+            <img
+              class=" dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+              alt="avatar person"
+            />
+            <ul class="dropdown-menu mt-2" style={{ width: "15rem" }}>
+              <li class="dropdown-item">
+                <i className="fa-regular fa-message mx-1"></i> message
+              </li>
+              <li class="dropdown-item  mt-1">
+                <i class="fa-solid fa-bullhorn mx-1"></i> create Add
+              </li>
+              <li class="dropdown-item mt-1">
+                <i class="fa-solid fa-dollar-sign  mx-1"></i> Monetization
+              </li>
+              <li class="dropdown-item mt-1">
+                <i class="fa-solid fa-chart-simple  mx-1"></i> Your content &
+                stats
+              </li>
+              <li class="dropdown-item mt-1">
+                <i class="fa-regular fa-bookmark  mx-1"></i> Bookmarks
+              </li>
+              <li class="dropdown-item mt-1">
+                <i class="fa-solid fa-file-pen  mx-1"></i> Drafts
+              </li>
+              <li class="dropdown-item mt-1">
+                <i class="fa-solid fa-asterisk  mx-1"></i> Try Quora
+              </li>
+              <hr />
+              <li class="dropdown-item">Dark mode</li>
+              <li class="dropdown-item mt-1">Setting</li>
+              <li class="dropdown-item mt-1">Help</li>
+              <li class="dropdown-item ">Logout</li>
+              <hr />
+              <li className="mx-2">About -Careers -Terms -Privacy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="qHeader_Rem">
+          <i class="fa-solid fa-globe"></i>
         </div>
 
         <button className="btn_question" onClick={() => setIsModalOpen(true)}>
@@ -109,10 +150,11 @@ function QuoraHeader() {
             <img
               className="quora_person"
               src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-              alt="avatar"/>
+              alt="avatar"
+            />
             <div className="modal_scope">
               <i class="fa-solid fa-user-group"></i>
-              <p>Public</p>
+              <p style={{marginTop: "10px"}}>Public</p>
               <i class="fa-solid fa-caret-down"></i>
             </div>
           </div>
@@ -136,11 +178,7 @@ function QuoraHeader() {
               />
             </div>
             {imgLink !== "" && (
-              <img
-                src={imgLink}
-                className="question_img"
-                alt="question"
-              />
+              <img src={imgLink} className="question_img" alt="question" />
             )}
           </div>
           <div className="modal_buttons">
