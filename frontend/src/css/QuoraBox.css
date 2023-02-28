@@ -37,7 +37,11 @@
   color: rgb(79, 78, 78);
   cursor: pointer;
 }
-.quora_replys:hover {
+.quora_box_a:hover {
   color: black;
   text-decoration: underline;
+}
+.quora_box_a{
+  color: rgb(145, 139, 139);
+  text-decoration: none;
 }

@@ -233,6 +233,10 @@ button:hover {
   margin-top: 10px;
 
 }
+.dropdown-item:hover{
+  background: rgb(211, 211, 211);
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
     .btn_question{

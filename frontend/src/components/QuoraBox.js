@@ -10,9 +10,9 @@ function QuoraBox() {
         <input type="text" placeholder='What do you want to ask or share ?' />
       </div>
       <div className='quora_reply'>
-        <div className='quora_replys'><a href='/'><i class="fa-solid fa-magnifying-glass" style={{color: "black"}}></i> Ask</a></div>
-        <div className='quora_replys'><a href='/'><i class="fa-regular fa-pen-to-square" style={{color: "black"}}></i> Answer</a></div>
-        <div className='quora_replys'><a href='/'><i class="fa-solid fa-pencil" style={{color: "black"}}></i> Post</a></div>
+        <div className='quora_replys'><a href='/' className='quora_box_a'><i class="fa-solid fa-magnifying-glass" style={{color: "black"}}></i> Ask</a></div>
+        <div className='quora_replys'><a href='/' className='quora_box_a'><i class="fa-regular fa-pen-to-square" style={{color: "black"}}></i> Answer</a></div>
+        <div className='quora_replys'><a href='/' className='quora_box_a'><i class="fa-solid fa-pencil" style={{color: "black"}}></i> Post</a></div>
       </div>
     </div>
   )

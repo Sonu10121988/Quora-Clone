@@ -86,7 +86,7 @@
   .post_actions {
     width: 15%;
     background-color: lightgray;
-    padding: 10px;
+    padding: 6px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -103,6 +103,14 @@
   
   .post_actions:hover {
     color: rgb(0, 140, 255);
+  }
+  .post_actions >button {
+    background-color: lightgray;
+    font-size: 20px;
+    border: none;
+  }
+  .post_actions >button:hover{
+    background-color: lightgray;
   }
   
   .action_more {
@@ -157,3 +165,4 @@
     width: 100%;
     height: 120px;
   }
+ 

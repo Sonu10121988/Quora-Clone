@@ -62,8 +62,8 @@ function Post({ post }) {
                 alt=""
               />
             </div>
-            <h6 style={{marginLeft: "10px"}}>user<a href="/Follow">Follow</a></h6>
-         <small><LastSeen date={post?.createdAt} /> </small>
+            <h6 style={{marginLeft: "10px"}}>user<a href="/Follow" className='quora_box_a' style={{color:"black", marginRight: "10px"}}>Follow</a></h6>
+          <small> <LastSeen date={post?.createdAt} /> </small>
            </div>
           <div className="post_body">
             <div className="post_question">
@@ -113,11 +113,11 @@ function Post({ post }) {
           </div>
           <div className="post_footer">
             <div className="post_actions">
-            <button  onClick={() => setUpArrow((prev) => prev === "black" ? "green" : "black")} >
+             <button  onClick={() => setUpArrow((prev) => prev === "black" ? "green" : "black")} >
               <i class="fa-sharp fa-solid fa-arrow-up" style={{color:upArrow}}></i>
               </button>
     
-              <button  onClick={() => setDownArrow((prev) => prev === "black" ? "red" : "black")} >
+             <button  onClick={() => setDownArrow((prev) => prev === "black" ? "red" : "black")} >
               <i class="fa-solid fa-arrow-down" style={{color:downArrow}}></i>
               </button>
             </div>
