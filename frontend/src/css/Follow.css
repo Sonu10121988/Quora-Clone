@@ -1,0 +1,99 @@
+.follow_mainContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.discover-space-wrapper {
+    display: flex;
+    padding: .5rem;
+}
+
+.left-logo-wrapper img {
+    width: 50px;
+    border-radius: 10px;
+  
+}
+.left-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.right-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    /* background-color: red; */
+    width: 100%;
+    text-align: justify;
+}
+
+.right-content-wrapper .company-name {
+    font-weight: 700;
+}
+
+.discover-space-comp {
+    /* border-radius: 1rem; */
+    padding: 5px;
+    cursor: pointer;
+    height: 6rem;
+}
+
+.discover-space-comp:hover {
+    background-color:#F1F2F2;
+}
+
+.lower-discover {
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* follow css */
+.following-container-wrapper {
+    margin-top: 4rem;
+    height: 100%;
+    width: 100%;
+    /* background-color: #f1f2f2; */
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.main-content {
+    width: 80%;
+
+    /* background-color: bisque; */
+    height: 100vh;
+    display: flex;
+    gap: 15px;
+}
+
+.left-content {
+    /* background-color: white; */
+    width: 15%;
+    height: 50%;
+    position: sticky;
+    top: 4rem;
+
+}
+
+.discover-spaces {
+    background-color: whitesmoke;
+    width: 60%;
+}
+
+.upper-discover {
+    /* background-color: skyblue; */
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.upper-discover img {
+    width: 7rem;
+}
